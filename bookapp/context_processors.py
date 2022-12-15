@@ -5,6 +5,7 @@ def category_links(request):
     category = Category.objects.all()
     return {'categories': category}
 
+
 def book_search(request):
     search_form = BookSearchForm
     if request.method == 'POST':
