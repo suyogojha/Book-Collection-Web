@@ -24,6 +24,7 @@ def category_detail(request, slug):
     category = Category.objects.get(slug = slug)
     return render(request, 'genre_detail.html', {'category': category})
 
+
 @login_required(login_url='login')
 def book_detail(request, slug):
     book = Book.objects.get(slug = slug)
